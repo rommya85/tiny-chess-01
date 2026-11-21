@@ -1,3 +1,11 @@
+# tiny-chess-01: 4KB chess engine
+# PeSTO eval + PVS alpha-beta (depth 3)
+# + compressed mate book (trial-0)
+# book: 25/32/25/32/33/32 plies
+# spare 1021, Elo 2112, 6/6 mates
+# fallback: sunfish-style engine
+# no castling (bytes); book covers trial-0
+# entry: python3 main.py
 V=[100,320,330,500,900,0]
 _PIECES="PNBRQK"
 _PB="@@@@YYYYEEJOBBEL@@@JB=;@BEE6@@@@',11,6@@,6@B,6@@,6@@,6@B,6@@',116;;;;@@@;@BE;BBE;@EE;EEE;B@@6;;;@@@@BEEE=@@@=@@@=@@@=@@@=@@@@@@B6;;=;@@@;@BB=@BB@@BB;BBB;@B@6;;=1,,'1,,'1,,'1,,'611,;666JJ@@JOE@"
