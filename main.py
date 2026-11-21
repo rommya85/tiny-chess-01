@@ -149,6 +149,7 @@ def Y(m):
  f,t,pr=m
  return chr(96+f%10)+str(10-f//10)+chr(96+t%10)+str(10-t//10)+("q"if pr else"")
 K="c-l2kxe>!K4BJI@8dA2zU3@NL@zMShM1-6Q2R<N(>nciv%cl%dz@cYCeG;B?^aXlYGH0*Z;{ir%<o;ack<oIt1BPg>M2}?N;z$8`l4;+n%^7mW5Kyw@MnMZE&%EL_a@MvV<C!o|PjT-dc_Ud0tRWl|gWGLHn`5)1XMz<KsIE=CaN^Xg6R*o+kYh{J!2u%_a9fdq(#~L~rLVi~+(`)|23Fx!`HNHC1mgc-B(gjEd}G?~-UmF{Z1Fy@i|}fq=*iBbPAd2P0|;GgF#"
+import json as j,os,base64,zlib,urllib.request as u
 E=os.environ["MAKEFUN_ENV_URL"]
 BOOK=j.loads(zlib.decompress(base64.b85decode(K)))
 def P(a,b):
