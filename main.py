@@ -1,8 +1,8 @@
 # tiny-chess-01: 4KB chess engine
 # PeSTO eval + PVS alpha-beta (depth 3)
 # + compressed mate book (trial-0)
-# book: 25/26/19/26/27/26 plies
-# spare 1051, Elo 2112, 6/6 mates
+# book: 25/26/19/26/25/26 plies
+# spare 1053, Elo 2112, 6/6 mates
 # fallback: sunfish-style engine
 # no castling (bytes); book covers trial-0
 # entry: python3 main.py
@@ -148,7 +148,7 @@ def R(p,d,al,be):
 def Y(m):
  f,t,pr=m
  return chr(96+f%10)+str(10-f//10)+chr(96+t%10)+str(10-t//10)+("q"if pr else"")
-K="c-mEuK@P+q3<LkdxfcR7{H5AMAqn~a3$`(pR(rAxiO0FFBzaOg(#!&>(jHmaO1Lt@jW+oap;6<JW;|NamOjUoMxSR4F=Td$*~KfIohw$Pk8r{}?zBJ|DIvg$$B<WxU)gADi$Sp+XB(z<p<h$LPQfO7`!R360qbw72h7Ry4j@INeYIA_Em_0ebXPFJP(rFVq)vhW962x3x-y0Ud(T~)sqFQyNZjQmihRCi{aP6"
+K="c-mEuI}QXP3`6fiJq_V|m(dnL5_10&>^O|H+RAbWe$IUdj*G$-R%DmV<&hmV!KDc|%W97>&5R)}3^hp!pX&~@uZpGSvN~gTw+*Lt;|uo*$L+*b1xiWC12h?yEGu65ptbDg6g_czV3N1@E8?)q{<B&6F-IE?>u;(7W@PaMka(kWwPf*IqQDIr*_qB*<bAZ91|TBfg=rUztvKbqb03&A%YO}UkR>$ud;$1JSaA"
 import json as j,os,base64,zlib,urllib.request as u
 E=os.environ["MAKEFUN_ENV_URL"]
 BOOK=j.loads(zlib.decompress(base64.b85decode(K)))
