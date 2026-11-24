@@ -148,7 +148,7 @@ def R(p,d,al,be):
 def Y(m):
  f,t,pr=m
  return chr(96+f%10)+str(10-f//10)+chr(96+t%10)+str(10-t//10)+("q"if pr else"")
-K"c-mEuI}QXP3`6fiJq>^EGTH)2LhgTp#Q|xxm1W`h;rDgqXK;_3o=g(uEgU()g%P)ipXQR(EhBPqpXYU>%>rLdW+S|=y5OWNoKPEZR0mo|5ilfhumXvSkS4(^c`;aC=#eO=ZoeVRX(6;S8?2CBR?R<Vuiaqnwklv6)SrT2lkQwjjLRN+GMJU`>{)GfhQj5gNMrm+vxV-!btqgl{h_f$Bha5OP%>3D"
+K="c-mEuI}QXP3`6fiJq>^EGTH)2LhgTp#Q|xxm1W`h;rDgqXK;_3o=g(uEgU()g%P)ipXQR(EhBPqpXYU>%>rLdW+S|=y5OWNoKPEZR0mo|5ilfhumXvSkS4(^c`;aC=#eO=ZoeVRX(6;S8?2CBR?R<Vuiaqnwklv6)SrT2lkQwjjLRN+GMJU`>{)GfhQj5gNMrm+vxV-!btqgl{h_f$Bha5OP%>3D"
 import json as j,os,base64,zlib,urllib.request as u
 E=os.environ["MAKEFUN_ENV_URL"]
 BOOK=j.loads(zlib.decompress(base64.b85decode(K)))
